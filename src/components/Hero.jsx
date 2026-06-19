@@ -417,7 +417,7 @@ export default function HeroSection({ imageSrc }) {
             <div className="person-wrap">
               <div className="person-frame">
                 {imageSrc ? (
-                  <img src={} alt="Jackbo" />
+                  <img src={imageSrc} alt="Jackbo" />
                 ) : (
                   <svg className="person-placeholder-svg" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="100" cy="90" rx="55" ry="65" fill="rgba(255,255,255,0.2)" />
