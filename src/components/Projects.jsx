@@ -1,24 +1,51 @@
-function Projects() {
+const projects = [
+  {
+    title: "Digital Archive of Sindh Heritage",
+    image: "/p1.jpg",
+  },
+  {
+    title: "Portfolio Website",
+    image: "/p2.jpg",
+  },
+  {
+    title: "E-Commerce Store",
+    image: "/p3.jpg",
+  },
+];
+
+export default function Projects() {
   return (
-    <section>
-      <h2>Projects</h2>
+    <section id="projects" className="py-24">
+      <div className="section">
 
-      <div>
-        <h3>Library Management System</h3>
-        <p>Developed using PHP and MySQL.</p>
-      </div>
+        <h2 className="text-5xl font-bold mb-16">
+          Selected Projects
+        </h2>
 
-      <div>
-        <h3>Restaurant Management System</h3>
-        <p>Built in C Language.</p>
-      </div>
+        <div className="grid lg:grid-cols-3 gap-8">
 
-      <div>
-        <h3>Unity Runner Game</h3>
-        <p>Game developed using Unity Engine.</p>
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="bg-[#1d012f] rounded-3xl overflow-hidden"
+            >
+              <img
+                src={project.image}
+                alt=""
+                className="h-72 w-full object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="text-xl font-bold">
+                  {project.title}
+                </h3>
+              </div>
+            </div>
+          ))}
+
+        </div>
+
       </div>
     </section>
   );
 }
-
-export default Projects;
