@@ -374,8 +374,8 @@ export default function HeroSection({ imageSrc }) {
         {/* NAV */}
         <nav className="hero-nav">
           <div className="logo">
-            <div className="logo-icon">A</div>
-            Aretiv
+            <div className="logo-icon">S</div>
+            shahzaib
           </div>
           <ul className="nav-links">
             <li>About</li>
@@ -417,7 +417,7 @@ export default function HeroSection({ imageSrc }) {
             <div className="person-wrap">
               <div className="person-frame">
                 {imageSrc ? (
-                  <img src={imageSrc} alt="Jackbo" />
+                  <img src={} alt="Jackbo" />
                 ) : (
                   <svg className="person-placeholder-svg" viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
                     <ellipse cx="100" cy="90" rx="55" ry="65" fill="rgba(255,255,255,0.2)" />
